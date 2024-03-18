@@ -10,11 +10,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #eeee;
+    padding: 20px;
+}
+
+.header-login-box{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modes{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modes > button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
 }
 
 .box-login{
-    max-width: 550px;
-    max-height: 700px;
+    max-width: 400px;
+    max-height: 500px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -22,31 +53,54 @@
     justify-content: center;
     box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.2);
     flex-direction: column;
-    padding: 10px;
     border-radius: 10px;
-
+    background-color: white;
 }
 
 .login-form{
     width: 100%;
-    height: 75vh;
-    background-color: aqua;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
-}
-
-.form-tabs > button{
-    padding: 20px;
-    color: black;
-    background-color: white;
-    border: none;
-    border-radius: 10px 10px 0 0;
+    gap:20px;
+    padding: 0 20px 100px 20px;
 }
 
 .input-label-box{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 5px;
+}
+
+.input-label-box > input{
+    padding: 10px; 
+    border: solid 2px black;
+    outline: none;
+}
+
+.input-label-box > input:focus{
+    border: solid 2px orangered;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+
+.options{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options > a {
+    text-decoration: none;
+    color: black;
+}
+
+.options > a:hover {
+    color: orangered;
+    transition: 0.3s ease-in-out;
 }
